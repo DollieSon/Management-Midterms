@@ -10,7 +10,7 @@ public class Customer extends Person{
     public void Speak(Person employee){
         if(getAge() > employee.getAge() && employee instanceof Developer ){
             if(((Developer) employee).getProjectManager() != null) {
-                System.out.printf("Can I see your manager %s%n?", ((Developer) employee).getProjectManager().getName());
+                System.out.printf("Can I see your manager %s?%n", ((Developer) employee).getProjectManager().getName());
                 return;
             }
         }
